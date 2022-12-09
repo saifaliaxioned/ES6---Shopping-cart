@@ -22,55 +22,57 @@
       <section class="cart-section">
         <div class="wrapper">
           <h1>enter items and quantity:</h1>
-          <div class="cart-data">
-            <form action="#FIXME" class="dataForm">
-              <div class="input-group">
-                <label for="item">item:</label>
-                <input type="text" class="item" placeholder="Enter name of item">
-                <span class="input-error">*Please add item</span>              
+          <div class="cart-content">
+            <div class="cart-data">
+              <form action="#FIXME" class="dataForm">
+                <div class="input-group">
+                  <label for="item">item:</label>
+                  <input type="text" class="item" placeholder="Enter name of item">
+                  <span class="input-error">*Please add item</span>              
+                </div>
+                <div class="input-group">
+                  <label for="quantity">quantity:</label>
+                  <input type="number" class="quantity" placeholder="Enter quantity of" min="1">
+                  <span class="input-error">*Please add quantity</span> 
+                </div>
+                <div class="input-control">
+                  <input type="submit" value="Save">
+                </div>
+              </form>
+              <div class="cart-table">
+                <h2>shopping list:</h2>
+                <ul class="head-items">
+                  <li class="head-list">
+                    <h2>name</h2>
+                  </li>
+                  <li class="head-list">
+                    <h2>value</h2>
+                  </li>
+                  <li class="head-list">
+                    <h2>modify</h2>
+                  </li>
+                  <li class="head-list">
+                    <h2>remove</h2>
+                  </li>
+                </ul>
+                <ul class="data-items">
+                  <li class="dummy-list">dummy</li>
+                </ul> 
+                <div class="total-amount">
+                  <h3>total amount: <span>dummy</span></h3>
+                </div>           
               </div>
-              <div class="input-group">
-                <label for="quantity">quantity:</label>
-                <input type="number" class="quantity" placeholder="Enter quantity of" min="1">
-                <span class="input-error">*Please add quantity</span> 
+              <div class="clear-btn">
+                <a href="#FIXME" title="Clear">clear</a>
+                <span>*Remove all items</span>
               </div>
-              <div class="input-control">
-                <input type="submit" value="Save">
-              </div>
-            </form>
-            <div class="cart-table">
-              <h2>shopping list:</h2>
-              <ul class="head-items">
-                <li class="head-list">
-                  <h2>name</h2>
-                </li>
-                <li class="head-list">
-                  <h2>value</h2>
-                </li>
-                <li class="head-list">
-                  <h2>modify</h2>
-                </li>
-                <li class="head-list">
-                  <h2>remove</h2>
-                </li>
-              </ul>
-              <ul class="data-items">
-                <li class="dummy-list">dummy</li>
-              </ul> 
-              <div class="total-amount">
-                <h3>total amount: <span>dummy</span></h3>
-              </div>           
             </div>
-            <div class="clear-btn">
-              <a href="#FIXME" title="Clear">clear</a>
-              <span>*Remove all items</span>
+            <div class="cart-image">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1591348278999-ee1d0c06ed7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNob3BwaW5nJTIwYmFnfGVufDB8MnwwfHw%3D&w=1000&q=80" alt="Bag">
+              </figure>
             </div>
-          </div>
-          <div class="cart-image">
-            <figure>
-              <img src="https://images.unsplash.com/photo-1591348278999-ee1d0c06ed7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNob3BwaW5nJTIwYmFnfGVufDB8MnwwfHw%3D&w=1000&q=80" alt="Bag">
-            </figure>
-          </div>
+          </div>          
         </div>
       </section>
       <!-- cart section end -->

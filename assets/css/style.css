@@ -82,6 +82,12 @@ sub { bottom: -.25em; }
 .cf { *zoom: 1; }
 
 /*for all*/
+*,*::before,*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -104,51 +110,129 @@ li {
   margin: 0 auto;
 }
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
+.cart-section .wrapper {
+  padding: 22px 36px;
+  background-color: #CBE4E1;
+}
 
+.cart-content{
+  display: flex;
+  justify-content: space-between;
+}
 
+.cart-data { flex-basis: 63%; }
+.cart-image { flex-basis: 20%; }
 
+.cart-section h1 {
+  color: #8D0800;
+  font-size: 37px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
 
+.dataForm,.cart-table {
+  margin: 38px 0;
+  background-color: #fff;
+}
 
+.dataForm,.head-items { display: flex; }
 
+.dataForm { 
+  margin-top: 24px;
+  padding: 21px 5%;
+  align-items: center;
+}
 
+.input-group {
+  padding: 5px 0;
+  position: relative;
+}
 
+.input-group input {
+  width: 45%;
+  margin-left: 6%;
+  padding: 5px 2px;
+}
+
+.input-group label {
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+.input-error {
+  display: none;
+  position: absolute;
+  bottom: -10px;
+  left: 32%;
+  font-size: 11px;
+  color: #ff0000;
+}
+
+.input-control input,.clear-btn a {
+  padding: 5px 45px;
+  border: none;
+  outline: none;
+  background-color: #8FC63E;
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.clear-btn span { font-size: 15px; }
+.cart-table { padding:20px 40px 20px 15px; }
+
+.cart-table h2 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.head-items {
+  padding: 8px;
+  justify-content: space-around;
+  background-color: #CFCFCF;
+  gap: 30px;
+}
+
+.dummy-list { display: none; }
+
+.data-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-store {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.store-list {
+  display: flex;
+  align-items: center;
+}
+
+.total-amount {
+  margin-top: 20px;
+  padding-top: 8px;
+  border-top: 2px solid #000;
+  text-align: right;
+  text-transform: capitalize;
+  display: none;
+}
+
+.total-amount span { font-weight: bold; }
+
+.head-list h2 {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.cart-image figure { margin-top: 25px; }
+.show,.show-error { display: block; }
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
